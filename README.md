@@ -36,4 +36,5 @@
     nginx: configuration file /etc/nginx/nginx.conf test is successful
 ## Akkor jó lett
 
-## 5. NGINX restrat
+## 5. NGINX restart
+    sudo systemctl reload nginx

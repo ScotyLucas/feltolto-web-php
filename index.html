@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fájl Feltöltés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<link rel="stylesheet" href="styles.css">
+    <header>
+        <div class="logo">
+            <h1>Filmek és Sorozatok Feltöltése</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="upload-form-container">
+            <h2>Feltöltés</h2>
+            <form id="uploadForm" enctype="multipart/form-data" action="upload.php" method="POST">
+                <div class="category-selection">
+                    <label for="category">Válassz kategóriát:</label>
+                    <select name="category" id="category">
+                        <option value="film">Film</option>
+                        <option value="sorozat">Sorozat</option>
+                    </select>
+                </div>
+
+                <div class="file-upload">
+                    <label for="file">Válassz fájlt:</label>
+                    <input type="file" name="file" id="file" required>
+                </div>
+
+                <button type="submit">Feltöltés</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Filmek és Sorozatok. Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>
